@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-family: roboto;margin: 0px; padding: 0px; }
+
+a {text-decoration: none;outline: none;}
+
+a:focus {outline: none;}
+
+ul {list-style-type: none;}
+
+@font-face {
+  font-family: AleoReg;
+  src: url(Fonts/aleo-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: AleoBold;
+  src: url(Fonts/Aleo-Bold.otf);
+}
+
+
+
+/* ---------------------- LOGIN SECTION ------------------------- */
+
+.login-margin{ position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-70%);}
+
+.login-sect {margin: auto; width: 250px; }
+
+.title-container > h3 {font-family: AleoBold;font-size: 25px; color: #1C2857;margin-bottom: 0px;margin-top: 10px;}
+
+.title-container > h4 {font-family: AleoReg;font-size: 21px;font-weight: normal; color: #1C2857;margin-top: 0px;}
+
+.logo-wrapper-login {margin: auto; width: 100px; }
+
+.netlify-identity-menu {padding: 0px;}
+
+.netlify-identity-item {margin: auto; width: 204.8px;margin-top: 30px; }
+
+.netlify-identity-login {list-style-type: none;padding-right: 75px;padding-left: 75px;padding-bottom: 12px;padding-top: 12px;color: black;}
+
+.netlify-identity-signup {list-style-type: none;background-color: #1C2857;padding-right: 75px;padding-left: 75px;padding-bottom: 12px;padding-top: 12px;color: white;border-radius:5px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Search Field</title>
+</head>
+<body>
+
+<style>.search-input {width:200px;text-align:center; height:40px;} .search  {display:none; }  .search:focus > ul {display:block; }</style>
+        
+<div >
+ <input class="search-input vivify popIn" type="text" id="Search"
+            onkeyup="myFunction()" placeholder="Find An Industry" title="Find An Industry">
+        <ul id="Menu" class = "search">
+            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="Industrial">Industrial</a></li>
+            
+             <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="Industrial">Automotive</a></li>
+                    
+              <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="Industrial">Fishing</a></li>
+                    
+               <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="Industrial">Technology</a></li>
+                    
+               <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="Industrial">Shipping</a></li>
+                    
+               <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn"
+                    href="Industrial">Recreational</a></li>
+        </ul> 
+</div>
+       
+    
+    <script> function myFunction() {
+     var input, filter, ul, li, a, i;
+     input = document.getElementById("Search");
+     filter = input.value.toUpperCase();
+     ul = document.getElementById("Menu");
+     li = ul.getElementsByTagName("li");
+     for (i = 0; i < li.length; i++) {
+         a = li[i].getElementsByTagName("a")[0];
+         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+             li[i].style.display = "";
+         } else {
+             li[i].style.display = "none";
+         }
+     }
+     
+     var search= document.getElementsByClassName ("search");
+		 search[0].style.opacity = "block"
+ }
+</script>
+</body>
+</html>
+
+
