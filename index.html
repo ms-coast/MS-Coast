@@ -24,10 +24,24 @@
 	</div>
 	
 	<div class="authenticate-container">
-		<div data-netlify-identity-menu><style>.modalDialog{margin-top: 50px;}</style></div>
+		<div data-netlify-identity-menu style=""></div>
+		<div class="item-container" style="position: fixed;width: 100%; height: 50px; background-color: green;z-index: 100;"></div>
 	</div>
 	</div>	
 	</div>
 	
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAS124IKnVU5H1UAVGOkU-Q8Sh_mhDXNYc",
+    authDomain: "ms-coast.firebaseapp.com",
+    databaseURL: "https://ms-coast.firebaseio.com",
+    projectId: "ms-coast",
+    storageBucket: "ms-coast.appspot.com",
+    messagingSenderId: "959055494900"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
 </html>
